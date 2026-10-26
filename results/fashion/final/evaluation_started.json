@@ -1,0 +1,7 @@
+{
+  "started_at_utc": "2026-10-21T13:43:42.315840+00:00",
+  "plan_sha256": "c2a785c6bbded5e8a2eacb82670a2ea600b423a73fde048a8f2675cfb9b5c141",
+  "evaluator_sha256": "c1a764cd599ba79bf44846e644a6126b5e9923f1dbf86f0a0d4cbcb80057ebcd",
+  "guard_module_sha256": "aa72ae53af65d411c7d619100d3a57564ff0fd96da76950df36f7b15e72709d0",
+  "authorization": "User explicitly requested execution of the frozen final evaluation in the current chat."
+}

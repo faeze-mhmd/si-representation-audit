@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-21T12:55:23.642149+00:00",
+  "packaged_models_and_records_byte_identical": 6,
+  "validation_examples": 6000,
+  "saved_readout_summaries_reconstructed": 24,
+  "figures_text_verified": 4,
+  "figure_packaging": "SVG CRLF normalized to LF; all other text identical",
+  "gallery_examples_verified": 12,
+  "local_links_checked": 78,
+  "ledger_unique_rows": 93,
+  "frozen_source_hashes_verified": 12,
+  "test_evaluated": false,
+  "new_training_or_inference": false,
+  "verification_script_sha256": "b3cf975a15effcc63303f66384237269aea2ac570618f16c27ba4163a06e98e7"
+}

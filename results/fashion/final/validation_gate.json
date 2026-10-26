@@ -1,0 +1,62 @@
+{
+  "passed_at_utc": "2026-10-21T13:45:04.338759+00:00",
+  "validation_readouts_reproduced": 24,
+  "exact_validation_predictions_reproduced": 24,
+  "neural_models_reloaded": 6,
+  "neural_refit": false,
+  "test_performance_accessed": false,
+  "test_provenance_expected": {
+    "decoded_images_sha256": "5b4141f0afbad91edebe8549f8fcffe087ea10ca49f1dbef5c9a5cd8815ce37b",
+    "decoded_labels_sha256": "0402a96d92fd2663957122ceb108a494c5af83dab82d92729df917d7dec38c34",
+    "files": {
+      "t10k-images-idx3-ubyte.gz": {
+        "bytes": 4422102,
+        "md5": "bef4ecab320f06d8554ea6380940ec79",
+        "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073"
+      },
+      "t10k-labels-idx1-ubyte.gz": {
+        "bytes": 5148,
+        "md5": "bb300cfdad3c16e7a12a480ee83cd310",
+        "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5"
+      }
+    }
+  },
+  "frozen_training_provenance": {
+    "phase": "Fashion-MNIST CNN fixed-budget train/validation v1",
+    "manifest_sha256": "7e8591baa4d311e61f8dbe32e69c3b5dbb1e24ba14b7e6384e3eea8d373cc6cd",
+    "manifest_file_sha256": "7002bf094e8c6b468c9b2915406ca36278b36f570af348627f1cf3cf7a587bb9",
+    "baseline_results_sha256": "04c738db5f46e91e8b05fb2927afc833859d960aef22389dbbdd43f8f19d8a91",
+    "source_sha256": {
+      "src/si_audit/cnn.py": "089ca4e2ba4745c7ba602a55b97c66d83cd871944e3713eb08c13af0865e0343",
+      "src/si_audit/fashion_data.py": "cc84095211d3deb23a641b1fe752c3e8ba49fb10e37093a7f12bfbb2d171de0a",
+      "src/si_audit/fashion_readouts.py": "b4387348c5bc57bb3a5e873fab6b25e8e78af243310591ad722b1aeb06792b26",
+      "src/si_audit/fashion_training.py": "193365e8b4106f5b34d8cef2dbf8c3bb34a714c12e54f1a9eadd9fc3f01df6c1",
+      "src/si_audit/metrics.py": "987096a341a36453b96c2b1d57f39f7ba6d38099818137f3db40064428d5a7b2",
+      "src/si_audit/baselines.py": "69f90771e0dd57cea3141b41199d2003a58399dd29cb879693d0993972aa3372",
+      "src/si_audit/training.py": "2052b906b1c19861090db9824f7b5eb3b50a8914082a32e2f4533f75718da63d",
+      "scripts/run_fashion_experiment.py": "5b3b18c9603d54d8da84ea3e2a17f5db6f7b9d37a43a779eaa9619a973f47e37",
+      "tests/test_fashion_training.py": "961d744caee7db4a1044f9373f264073b9e129111f93b7cb46300c0623741897",
+      "tests/test_fashion_readouts.py": "24b7d7b578685ea1ff04ca1e25c512445193c301d97b72bb9043876be61aa709",
+      "configs/fashion_cnn_v1.json": "049c4ebf18e1cff0e14c90d537a847f03065a2af007d4447c43dc496030dfb1b",
+      "FASHION_CNN_PROTOCOL.md": "747d0ddbd1457e10316ed9c42f3c510468f4289515df30848a4d9e835281791c"
+    },
+    "environment": {
+      "python": "3.11.4",
+      "numpy": "1.26.4",
+      "sklearn": "1.9.0",
+      "torch": "2.12.1+cpu",
+      "device": "cpu",
+      "threads": 1
+    },
+    "training_freeze_sha256": "e3a969dfe5c9dc8f738fed4fd2ae0d2701d34a623c78499f8083a3a9e8d7ebdb"
+  },
+  "artifact_sha256": {
+    "results/fashion/FINAL_EVALUATION_PLAN.md": "c2a785c6bbded5e8a2eacb82670a2ea600b423a73fde048a8f2675cfb9b5c141",
+    "results/fashion/experiment/experiment_index.json": "a30ef3c92c4e8f61fad1b8e76a9f616c86ac0382ccb9d1e61116b205a1387b0c",
+    "results/fashion/experiment/validation_analysis.json": "ef289c8deb4feaad1b46b16fb1ab3403d7d5efbaed6ebb7aeb17ae3b74b86d24",
+    "results/fashion/experiment/validation_predictions.csv": "1c3f2e1f20de9856eb4880a89f9e99fba09f7d99941fdbd35d772dea8140647e",
+    "results/fashion/baselines/baseline_results.json": "04c738db5f46e91e8b05fb2927afc833859d960aef22389dbbdd43f8f19d8a91"
+  },
+  "evaluator_sha256": "c1a764cd599ba79bf44846e644a6126b5e9923f1dbf86f0a0d4cbcb80057ebcd",
+  "guard_module_sha256": "aa72ae53af65d411c7d619100d3a57564ff0fd96da76950df36f7b15e72709d0"
+}

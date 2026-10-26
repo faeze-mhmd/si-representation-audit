@@ -1,0 +1,163 @@
+{
+  "config": {
+    "stage": "preflight; no real-data training or test performance",
+    "protocol": "FASHION_CNN_PROTOCOL.md v0.1",
+    "dataset": "Fashion-MNIST original IDX files",
+    "official_training_n": 60000,
+    "official_test_n": 10000,
+    "validation_n": 6000,
+    "split_seed": 2027,
+    "training_budget_seed": 2028,
+    "budgets": {
+      "A": 3000,
+      "B": 12000
+    },
+    "nested_budgets": true,
+    "si_train_n": 600,
+    "si_train_seed": 2029,
+    "si_validation_primary_n": 600,
+    "si_validation_sensitivity_n": 2000,
+    "si_validation_pool_seed": 2030,
+    "si_validation_primary_seed": 2031,
+    "permutation_seeds": {
+      "train": 2032,
+      "validation": 2033
+    },
+    "permutation_count": 100,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "architecture": "SmallFashionCNN: conv8/pool/conv16/pool/adaptive4x4/linear32/linear10",
+    "normalization": "float32 / 255.0; no fitted scaler",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "batch_size": 128,
+    "drop_last": false,
+    "epochs": 30,
+    "checkpoint_epochs": [
+      0,
+      5,
+      15,
+      30
+    ],
+    "primary_epoch": 30,
+    "primary_layer": "penultimate",
+    "si_distance_batch_size": 8,
+    "probe_logistic_C": 1.0,
+    "probe_logistic_max_iter": 1000,
+    "probe_seed": 2027,
+    "error_gallery_run": "fashion_A_seed11",
+    "error_gallery_count": 12,
+    "threads": 1,
+    "training_budget_seconds": 7200,
+    "measurement_budget_seconds": 3600,
+    "projection_safety_factor": 2.0,
+    "test_evaluation_authorized_in_preflight": false
+  },
+  "provenance": {
+    "phase": "Fashion-MNIST CNN fixed-budget train/validation v1",
+    "manifest_sha256": "7e8591baa4d311e61f8dbe32e69c3b5dbb1e24ba14b7e6384e3eea8d373cc6cd",
+    "manifest_file_sha256": "7002bf094e8c6b468c9b2915406ca36278b36f570af348627f1cf3cf7a587bb9",
+    "baseline_results_sha256": "04c738db5f46e91e8b05fb2927afc833859d960aef22389dbbdd43f8f19d8a91",
+    "source_sha256": {
+      "src/si_audit/cnn.py": "089ca4e2ba4745c7ba602a55b97c66d83cd871944e3713eb08c13af0865e0343",
+      "src/si_audit/fashion_data.py": "cc84095211d3deb23a641b1fe752c3e8ba49fb10e37093a7f12bfbb2d171de0a",
+      "src/si_audit/fashion_readouts.py": "b4387348c5bc57bb3a5e873fab6b25e8e78af243310591ad722b1aeb06792b26",
+      "src/si_audit/fashion_training.py": "193365e8b4106f5b34d8cef2dbf8c3bb34a714c12e54f1a9eadd9fc3f01df6c1",
+      "src/si_audit/metrics.py": "987096a341a36453b96c2b1d57f39f7ba6d38099818137f3db40064428d5a7b2",
+      "src/si_audit/baselines.py": "69f90771e0dd57cea3141b41199d2003a58399dd29cb879693d0993972aa3372",
+      "src/si_audit/training.py": "2052b906b1c19861090db9824f7b5eb3b50a8914082a32e2f4533f75718da63d",
+      "scripts/run_fashion_experiment.py": "5b3b18c9603d54d8da84ea3e2a17f5db6f7b9d37a43a779eaa9619a973f47e37",
+      "tests/test_fashion_training.py": "961d744caee7db4a1044f9373f264073b9e129111f93b7cb46300c0623741897",
+      "tests/test_fashion_readouts.py": "24b7d7b578685ea1ff04ca1e25c512445193c301d97b72bb9043876be61aa709",
+      "configs/fashion_cnn_v1.json": "049c4ebf18e1cff0e14c90d537a847f03065a2af007d4447c43dc496030dfb1b",
+      "FASHION_CNN_PROTOCOL.md": "747d0ddbd1457e10316ed9c42f3c510468f4289515df30848a4d9e835281791c"
+    },
+    "environment": {
+      "python": "3.11.4",
+      "numpy": "1.26.4",
+      "sklearn": "1.9.0",
+      "torch": "2.12.1+cpu",
+      "device": "cpu",
+      "threads": 1
+    },
+    "training_freeze_sha256": "e3a969dfe5c9dc8f738fed4fd2ae0d2701d34a623c78499f8083a3a9e8d7ebdb"
+  },
+  "runs": [
+    {
+      "run_id": "fashion_A_seed11",
+      "record": "fashion_A_seed11/metrics.json",
+      "bundle": "../../../checkpoints/fashion/fashion_A_seed11.json",
+      "disposition": "trained",
+      "invocation_seconds": 110.78174299999955,
+      "training_seconds": 29.308660800015787,
+      "measurement_seconds": 80.37830269997357,
+      "checkpoint_seconds": 0.31839019995823037,
+      "final_model_state_sha256": "577362e3257ccbfc116813d7ecf4efcf70b679c2e3a58fdb5e4c8e4b81d7a731"
+    },
+    {
+      "run_id": "fashion_B_seed11",
+      "record": "fashion_B_seed11/metrics.json",
+      "bundle": "../../../checkpoints/fashion/fashion_B_seed11.json",
+      "disposition": "trained",
+      "invocation_seconds": 269.6855027999991,
+      "training_seconds": 120.24138190003578,
+      "measurement_seconds": 148.91319929994643,
+      "checkpoint_seconds": 0.2986051999760093,
+      "final_model_state_sha256": "7118cdb124ceddeb714efd89095dfb6705bd4b92c7dc003ddcad4942341da595"
+    },
+    {
+      "run_id": "fashion_A_seed22",
+      "record": "fashion_A_seed22/metrics.json",
+      "bundle": "../../../checkpoints/fashion/fashion_A_seed22.json",
+      "disposition": "trained",
+      "invocation_seconds": 100.09163940000872,
+      "training_seconds": 28.318359099983354,
+      "measurement_seconds": 71.20098339999095,
+      "checkpoint_seconds": 0.31290239993541036,
+      "final_model_state_sha256": "5a3f0cc5e74afe033b345e75bf62046754f8a0decaa910f0cf5e3ad29883a116"
+    },
+    {
+      "run_id": "fashion_B_seed22",
+      "record": "fashion_B_seed22/metrics.json",
+      "bundle": "../../../checkpoints/fashion/fashion_B_seed22.json",
+      "disposition": "trained",
+      "invocation_seconds": 248.36350580000726,
+      "training_seconds": 111.00518729999021,
+      "measurement_seconds": 136.86440729998867,
+      "checkpoint_seconds": 0.27399450006487314,
+      "final_model_state_sha256": "8f2e5567315aedf7b7056d8cbd91f55b8a85e27721ba8ca88fac058f884e01d8"
+    },
+    {
+      "run_id": "fashion_A_seed33",
+      "record": "fashion_A_seed33/metrics.json",
+      "bundle": "../../../checkpoints/fashion/fashion_A_seed33.json",
+      "disposition": "trained",
+      "invocation_seconds": 99.36021279999113,
+      "training_seconds": 28.90875150001375,
+      "measurement_seconds": 69.9249294999463,
+      "checkpoint_seconds": 0.29553730005864054,
+      "final_model_state_sha256": "b0e69579b619aebbcc27ed30b8818cc01f1071a8c17c097a222de52ca14d8ad4"
+    },
+    {
+      "run_id": "fashion_B_seed33",
+      "record": "fashion_B_seed33/metrics.json",
+      "bundle": "../../../checkpoints/fashion/fashion_B_seed33.json",
+      "disposition": "trained",
+      "invocation_seconds": 285.92336879999493,
+      "training_seconds": 127.6767410000466,
+      "measurement_seconds": 157.6654950999946,
+      "checkpoint_seconds": 0.3137525999773061,
+      "final_model_state_sha256": "f6b3f48e933811adfef32e90dae11b037f167217af4a176102c4df0137ce5524"
+    }
+  ],
+  "test_evaluated": false,
+  "baseline_runtime_seconds": 27.60993320000125,
+  "completed": true,
+  "invocation_wall_seconds": 1114.2347900000022,
+  "completed_at_utc": "2026-10-21T12:40:15.565908+00:00",
+  "portable_path_note": "Only bundle paths adapted to ignored checkpoints/fashion/. Original numeric types and measurements preserved; native optimizer checkpoints remain in the C: experiment cache."
+}

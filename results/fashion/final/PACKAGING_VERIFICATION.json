@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-21T13:58:50.242273+00:00",
+  "original_final_artifacts_byte_identical": 6,
+  "gallery_content_identical": true,
+  "svg_texts_identical_except_CRLF_to_LF": 3,
+  "english_readout_rows_checked": 24,
+  "persian_head_rows_checked": 6,
+  "persian_group_rows_checked": 2,
+  "ledger_rows_unique": 117,
+  "new_final_ledger_rows_verified": 24,
+  "local_links_checked": 116,
+  "test_prediction_summary_verification": {
+    "status": "PASS",
+    "verified_at_utc": "2026-10-21T13:50:09.529074+00:00",
+    "readouts_verified": 24,
+    "test_rows_verified": 10000,
+    "rank_comparisons_verified": 18,
+    "gallery_examples_verified": 12,
+    "new_fit_or_neural_inference": false,
+    "cross_entropy_reconstructed_from_classes": false,
+    "analysis_source_sha256": "52388aafb155f8b9d6a530f498e90aaf60a4bfda27e9b812e87d041e9df61abc",
+    "results_sha256": "190bd6dac0391fd9c18ecbec796b0a519acd2f54f76b07e678db423eed3a581d",
+    "predictions_sha256": "982e1fa428f0e44c781c589dfe558db3a677fb241a8a45ed8e9e7411b907b5b9"
+  },
+  "no_fitting_or_neural_inference": true,
+  "verification_script_sha256": "5c7d8c476eea525c9b21849ef7b4787fb403c869d4cd7bd03e5db020ce49cf8c",
+  "document_sha256": {
+    "README.md": "7ed9af658d4358c7c1f178376e233a772b0e40ac0076fc31f7950a3ef29cca1e",
+    "PROJECT_BRIEF.md": "c75afa2faa9baf4d3e899e84a65d6500fbd597975f0665165acd54815e53360e",
+    "PORTFOLIO_SUMMARY.md": "2e9cb8889fca560dc77406f70aba2923ef050dea4e88370a229e1f83090435cf",
+    "CONTRIBUTIONS.md": "14fd4abb89631617fe17dd3b3edd55b1feac325b997ef2a07e76c55c38b31303",
+    "RESEARCH_REPORT_FA.md": "0f5f324b56b31de690f3643dfb4933ce86f2af3b1a81888258fa912ee6d29c9d",
+    "../PORTFOLIO_ROADMAP.md": "5ff91be52fa3b3393b1d46bd2bff2456fcc9d72379736f1980836f25b9acf42c",
+    "results/fashion/final/FINAL_REPORT.md": "828b66b6411d9d4fcf46bbb51b81e05702dc992f1c614806ebb991e79376533c",
+    "results/fashion/final/FINAL_REPORT_FA.md": "bc623d0c0b44816fe7ebf46b7dd841bd4a1da803c70de738c7c811f707267697",
+    "results/fashion/FINAL_EVALUATION_PLAN.md": "c2a785c6bbded5e8a2eacb82670a2ea600b423a73fde048a8f2675cfb9b5c141"
+  }
+}

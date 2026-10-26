@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_sha256": "74113307d74273e43ae298448f3f6d0da553ac6273bec6959e05eff8e3e75d60",
+  "prediction_rows": 1797,
+  "readouts_verified": 21,
+  "primary_rankings_verified": 4,
+  "group_summaries_verified": true,
+  "error_gallery_policy_verified": true,
+  "no_model_fitting_or_inference": true
+}

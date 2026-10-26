@@ -1,0 +1,11 @@
+# Final execution notes
+
+The user explicitly authorized the next frozen Fashion-MNIST final-test milestone. The pre-test plan was preserved byte-for-byte. Earlier artifacts' pre-test flags remain historical records rather than being rewritten.
+
+- Full existing-environment unit suite: 72 tests, PASS, 11.522 seconds inside unittest. Four new guard tests cover an exclusive execution marker, exact validation predictions, and parameter/warning/iteration/metric drift. The test process set Python's tempfile.tempdir to the named C: cache because sandbox-private temporary directories previously blocked checkpoint renames. This did not change model methods.
+- Evaluation: scripts/evaluate_fashion_final.py, raw input C:/Users/Jafar/AppData/Local/Temp/codex-si-audit-fashion/raw, output final_v1 beside raw. All 24 exact validation predictions, fitted readout parameters/warnings/iterations and classifier summaries reproduced before official test inference. No failed execution or post-test evaluator repair occurred.
+- Saved-result verification/render: scripts/analyze_fashion_final.py, the same raw data, final_v1 results and final_analysis_v1 output. Only saved predictions/records are checked; no fitting or neural inference. The analysis/report code was updated after test results to document observations and support lossless packaging. The executed evaluator, guard module, training code/config, fixed models and pre-test plan were not changed after evaluation.
+- Full results, CSV, start/access markers and validation gate are delivered with LF bytes identical to execution. Gallery JSON is whitespace-compacted. SVG text is identical after CRLF-to-LF normalization. The readout manifest preserves all 24 original partial-file hashes; their repeated arrays can be exactly reconstructed from the full outcome records and shared CSV. Original partial files and neural optimizer checkpoints remain in the local C: cache.
+- Three scientific figures were visually inspected. Report generation/packaging did not retrain models or change evaluation methods. No packages were installed; a fresh environment was not tested. No Git actions or publication occurred.
+
+Reproduction is described in the project README. Repeating test evaluation checks reproducibility; the benchmark is already inspected and cannot supply fresh confirmation of later changes.

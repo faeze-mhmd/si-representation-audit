@@ -1,0 +1,173 @@
+{
+  "evidence_kind": "synthetic metric verification; not model or benchmark results",
+  "executed_at_utc": "2026-10-21T07:25:12.070273+00:00",
+  "source_reference": "https://arxiv.org/abs/1906.05156v1; Section 2.2, equation (1)",
+  "environment": {
+    "python": "3.11.4",
+    "numpy": "1.26.4",
+    "executable": "C:\\Users\\Jafar\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "source_sha256": {
+    "src/si_audit/__init__.py": "578c369ec733030ae1831c7ab6d1fd9472fb7564c579cddcca7ad57ffb66039b",
+    "src/si_audit/metrics.py": "987096a341a36453b96c2b1d57f39f7ba6d38099818137f3db40064428d5a7b2",
+    "tests/test_metrics.py": "f8411bcd84935fdad4141d12e4543e722addeb9ee18d65d220d92b4bffb6dfb9",
+    "scripts/run_synthetic_demo.py": "47aee8d02e80c677506363332637fa27d587ecd7b635ebee0068ea4bed5b0c66",
+    "EXPERIMENT_PROTOCOL.md": "c5b10d5c90925a77253b95433a87abf63a7ed98ccb85e7c29072c0b505d85c59"
+  },
+  "examples": [
+    {
+      "name": "separated",
+      "points": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected_si": 1.0,
+      "observed_si": 1.0,
+      "neighbor_indices": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "neighbor_ids": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "same_label": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "nearest_distances": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "tie_fraction": 0.0,
+      "duplicate_vector_fraction": 0.0
+    },
+    {
+      "name": "alternating",
+      "points": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          7
+        ]
+      ],
+      "labels": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "expected_si": 0.0,
+      "observed_si": 0.0,
+      "neighbor_indices": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "neighbor_ids": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "same_label": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "nearest_distances": [
+        1.0,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "tie_fraction": 0.0,
+      "duplicate_vector_fraction": 0.0
+    },
+    {
+      "name": "partial_agreement",
+      "points": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          10
+        ]
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected_si": 0.75,
+      "observed_si": 0.75,
+      "neighbor_indices": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "neighbor_ids": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "same_label": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "nearest_distances": [
+        1.0,
+        1.0,
+        3.0,
+        6.0
+      ],
+      "tie_fraction": 0.0,
+      "duplicate_vector_fraction": 0.0
+    }
+  ]
+}

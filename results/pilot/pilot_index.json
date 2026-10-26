@@ -1,0 +1,128 @@
+{
+  "completed_at_utc": "2026-10-21T08:06:39.170287+00:00",
+  "provenance": {
+    "training_file_sha256": "e1b683cc211604fe8fd8c4417e6a69f31380e0c61d4af22e93cc21e9257ffedd",
+    "data_artifact_sha256": "eabed2b42ea8aacd2681fee64e7870327e112f5480e6b7d95a7d8c20f5ae653a",
+    "config_file_sha256": "63c1e7de2ba3e9ef0b85923f21f9490d554a64ab478eb8853998b3386081c378",
+    "source_sha256": {
+      "src/si_audit/training.py": "2052b906b1c19861090db9824f7b5eb3b50a8914082a32e2f4533f75718da63d",
+      "src/si_audit/data.py": "43728b2a628451596b565dfde326474f67f048e14fcee339e3a6fd7e905141e2",
+      "src/si_audit/metrics.py": "987096a341a36453b96c2b1d57f39f7ba6d38099818137f3db40064428d5a7b2",
+      "src/si_audit/cpu_benchmark.py": "3fcf6a36639a3e418118441c52a8d1a762b95b41c072732210009d2959b716cb",
+      "src/si_audit/baselines.py": "69f90771e0dd57cea3141b41199d2003a58399dd29cb879693d0993972aa3372",
+      "scripts/run_pilot.py": "263e0e5798b4b3afed25755e071ffe42890e7df03887e73b7b60f7517fe4da36",
+      "EXPERIMENT_PROTOCOL.md": "c5b10d5c90925a77253b95433a87abf63a7ed98ccb85e7c29072c0b505d85c59"
+    },
+    "environment": {
+      "python": "3.11.4",
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "sklearn": "1.9.0",
+      "torch": "2.12.1+cpu",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "device": "cpu",
+      "torch_threads": 1,
+      "loky_max_cpu_count": 1,
+      "deterministic_algorithms": true
+    }
+  },
+  "config": {
+    "protocol": "EXPERIMENT_PROTOCOL.md v0.2",
+    "architecture": [
+      64,
+      64,
+      32,
+      10
+    ],
+    "epochs": 50,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "settings": {
+      "A": 0.0,
+      "B": 0.01
+    },
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "checkpoint_epochs": [
+      0,
+      5,
+      20,
+      50
+    ],
+    "primary_layer": "penultimate",
+    "primary_epoch": 50,
+    "threads": 1,
+    "training_budget_seconds": 7200,
+    "permutation_count": 100,
+    "permutation_seeds": {
+      "train": 2030,
+      "validation": 2031
+    },
+    "probe_logistic_C": 1.0,
+    "probe_logistic_max_iter": 1000,
+    "error_gallery_run": "A_seed11",
+    "error_gallery_count": 12,
+    "analysis_stage": "train/validation preview; official test predictions prohibited",
+    "permutation_interpretation": "fixed-representation sanity control, not a significance test of a label-trained network"
+  },
+  "runs": [
+    {
+      "run_id": "A_seed11",
+      "record": "A_seed11/metrics.json",
+      "bundle": "../../checkpoints/A_seed11.json",
+      "disposition": "trained",
+      "invocation_wall_seconds": 11.387185300001875,
+      "final_model_state_sha256": "e0eb15828d6dbfffdc0a2c3de9bc23bc4790b34ca2073d795c735f7fd44c98b3"
+    },
+    {
+      "run_id": "B_seed11",
+      "record": "B_seed11/metrics.json",
+      "bundle": "../../checkpoints/B_seed11.json",
+      "disposition": "trained",
+      "invocation_wall_seconds": 11.139072999998461,
+      "final_model_state_sha256": "10f4b5bb6dd9f2cd815f2e1330e6b6eef30987ef4706b6707f656de3d493626a"
+    },
+    {
+      "run_id": "A_seed22",
+      "record": "A_seed22/metrics.json",
+      "bundle": "../../checkpoints/A_seed22.json",
+      "disposition": "trained",
+      "invocation_wall_seconds": 9.993329400007497,
+      "final_model_state_sha256": "0842aaa1bea3fe9515f7a438fdc03706fc61b0741e274dfd9d6673d1fbfad424"
+    },
+    {
+      "run_id": "B_seed22",
+      "record": "B_seed22/metrics.json",
+      "bundle": "../../checkpoints/B_seed22.json",
+      "disposition": "trained",
+      "invocation_wall_seconds": 13.320793699997012,
+      "final_model_state_sha256": "eb85aab5d48a4b22a0b4a2c3321472f3521d3054de200529fc43aa80b28d3d18"
+    },
+    {
+      "run_id": "A_seed33",
+      "record": "A_seed33/metrics.json",
+      "bundle": "../../checkpoints/A_seed33.json",
+      "disposition": "trained",
+      "invocation_wall_seconds": 10.276044300000649,
+      "final_model_state_sha256": "3fabaa78198f7b338180410d35974699723772bd42f7b94eafe450e1cfc73737"
+    },
+    {
+      "run_id": "B_seed33",
+      "record": "B_seed33/metrics.json",
+      "bundle": "../../checkpoints/B_seed33.json",
+      "disposition": "trained",
+      "invocation_wall_seconds": 9.173296399996616,
+      "final_model_state_sha256": "2b037a975539cade186bbe0ead2b08adedd7fb427e61a527bc58079743fb0633"
+    }
+  ],
+  "pilot_runs_completed": 6,
+  "test_evaluated": false,
+  "paired_initialization_and_orders_verified": true,
+  "invocation_wall_seconds": 65.29044660000363,
+  "training_seconds": 47.86969950016646,
+  "measurement_seconds": 16.38381870012381,
+  "portable_path_note": "Bundle paths adapted to delivered folder; original numeric types and all measurements preserved. Native optimizer/RNG checkpoints remain in temporary cache."
+}

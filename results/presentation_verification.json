@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-21T09:14:55.172977+00:00",
+  "report_primary_rows": 6,
+  "report_probe_rows": 6,
+  "report_baseline_rows": 3,
+  "report_group_summaries": 2,
+  "report_rank_correlations": 4,
+  "local_links_checked": 74,
+  "saved_readouts_reverified": 21,
+  "no_model_training_or_inference": true,
+  "new_unit_test_run": false,
+  "verification_script_sha256": "ff5c51e0a4a2abc5b666907ee6f03e020ef13ff4385e01983e6072b57eb83024",
+  "document_sha256": {
+    "RESEARCH_REPORT_FA.md": "b2825d5e8fa3c1a3997cda639350e622f42260951bd4fed63802aa1671edd059",
+    "PORTFOLIO_SUMMARY.md": "143536f05c4cc118646b6309922f378bae1863e7badac8b196876aa5d8f1dd89",
+    "CONTRIBUTIONS.md": "c616f08662d688e97a43f588b11c4c99743e9b9c935cef7c4872d8dda94337e1",
+    "README.md": "218d014f329b0e65b0738d6dd85b69a2a733acfc4665c17c210c81f1c320ab78",
+    "PROJECT_BRIEF.md": "a79d0e5b3806814f06c8ffcd1f30aa6211961a4af624b1246039984324c5ad5e",
+    "../PORTFOLIO_ROADMAP.md": "0484af20ab2b8af3db7f7118097919923fc1a848627ee3f6b5d32fb5d33bf65f"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "executed_at_utc": "2026-10-21T09:48:07.028775+00:00",
+  "stage": "real-training-only preflight",
+  "environment": {
+    "torch": "2.12.1+cpu",
+    "numpy": "1.26.4",
+    "device": "cpu",
+    "threads": 1
+  },
+  "manifest_sha256": "7e8591baa4d311e61f8dbe32e69c3b5dbb1e24ba14b7e6384e3eea8d373cc6cd",
+  "data_audit_sha256": "488bbdf1948918486aa31559b0000652730caed9f3644e5153608e178b379956",
+  "source_sha256": {
+    "scripts/preflight_fashion_real.py": "d4024480594f221cca2c72802a584abd812afe931b66430669ccc45271fcb6c3",
+    "src/si_audit/fashion_data.py": "cc84095211d3deb23a641b1fe752c3e8ba49fb10e37093a7f12bfbb2d171de0a",
+    "src/si_audit/cnn.py": "089ca4e2ba4745c7ba602a55b97c66d83cd871944e3713eb08c13af0865e0343",
+    "src/si_audit/metrics.py": "987096a341a36453b96c2b1d57f39f7ba6d38099818137f3db40064428d5a7b2",
+    "src/si_audit/training.py": "2052b906b1c19861090db9824f7b5eb3b50a8914082a32e2f4533f75718da63d",
+    "configs/fashion_cnn_v1.json": "049c4ebf18e1cff0e14c90d537a847f03065a2af007d4447c43dc496030dfb1b",
+    "FASHION_CNN_PROTOCOL.md": "747d0ddbd1457e10316ed9c42f3c510468f4289515df30848a4d9e835281791c"
+  },
+  "tiny_batch_overfit": {
+    "selection": "first five original row IDs per class within A; fixed before outcomes",
+    "training_rows": [
+      12,
+      25,
+      44,
+      87,
+      138,
+      144,
+      146,
+      151,
+      160,
+      164,
+      178,
+      183,
+      187,
+      202,
+      210,
+      212,
+      216,
+      231,
+      236,
+      237,
+      279,
+      292,
+      307,
+      325,
+      328,
+      407,
+      427,
+      459,
+      472,
+      485,
+      490,
+      514,
+      532,
+      557,
+      585,
+      594,
+      680,
+      731,
+      757,
+      844,
+      889,
+      1026,
+      1068,
+      1070,
+      1082,
+      1242,
+      1395,
+      1450,
+      1458,
+      2460
+    ],
+    "n": 50,
+    "max_steps": 400,
+    "check_every": 20,
+    "required_accuracy": 0.95,
+    "checks": [
+      {
+        "step": 0,
+        "tiny_training_accuracy": 0.10000000149011612,
+        "cross_entropy": 2.3071868419647217
+      },
+      {
+        "step": 20,
+        "tiny_training_accuracy": 0.3799999952316284,
+        "cross_entropy": 2.168846607208252
+      },
+      {
+        "step": 40,
+        "tiny_training_accuracy": 0.5799999833106995,
+        "cross_entropy": 1.617385983467102
+      },
+      {
+        "step": 60,
+        "tiny_training_accuracy": 0.7599999904632568,
+        "cross_entropy": 0.854978621006012
+      },
+      {
+        "step": 80,
+        "tiny_training_accuracy": 0.8600000143051147,
+        "cross_entropy": 0.453719824552536
+      },
+      {
+        "step": 100,
+        "tiny_training_accuracy": 0.9599999785423279,
+        "cross_entropy": 0.2532028257846832
+      }
+    ],
+    "passed": true,
+    "runtime_seconds": 1.1307305000082124,
+    "interpretation": "memorization sanity only; in-sample, throwaway weights, not validation/generalization evidence"
+  },
+  "two_epoch_timing_runs": [
+    {
+      "setting": "A",
+      "seed": 11,
+      "n": 3000,
+      "epochs": 2,
+      "steps_per_epoch": 24,
+      "epoch_seconds": [
+        0.5482052000006661,
+        0.5352178999892203
+      ],
+      "epoch_order_sha256": [
+        "574582ee67b9a577a60cd5baa3a233c263142d5a4237ea551e2e85c0b0413fd2",
+        "a4160deda0c03f044b578a295be8ec9382c1f9b7d6fb0932e2e099909629ecd6"
+      ],
+      "initial_model_state_sha256": "813116d4aec963766fc8f1a72ba4c68f49c2c3c1e5838c9f8399865f3461a9f1"
+    },
+    {
+      "setting": "B",
+      "seed": 11,
+      "n": 12000,
+      "epochs": 2,
+      "steps_per_epoch": 94,
+      "epoch_seconds": [
+        2.171571999992011,
+        2.0573457999998936
+      ],
+      "epoch_order_sha256": [
+        "4c5c914a1e07f8c7e3dac5cc5c89190e18dfe46d46f8efb6434b4414b6321c96",
+        "b2f60194c22adc3f411e9eef478fe2eceaf51947244108437d6707b7b7272ec7"
+      ],
+      "initial_model_state_sha256": "813116d4aec963766fc8f1a72ba4c68f49c2c3c1e5838c9f8399865f3461a9f1"
+    }
+  ],
+  "training_si_timing": {
+    "input": {
+      "n": 600,
+      "features": 784,
+      "seconds": 1.2563707000081195,
+      "si": 0.7233333333333334,
+      "tie_fraction": 0.0,
+      "duplicate_vector_fraction": 0.0,
+      "role": "training-only timing sanity of a discarded two-epoch model; not a study result"
+    },
+    "conv_features": {
+      "n": 600,
+      "features": 256,
+      "seconds": 0.37637850000464823,
+      "si": 0.66,
+      "tie_fraction": 0.0,
+      "duplicate_vector_fraction": 0.0,
+      "role": "training-only timing sanity of a discarded two-epoch model; not a study result"
+    },
+    "penultimate": {
+      "n": 600,
+      "features": 32,
+      "seconds": 0.04919299999892246,
+      "si": 0.6516666666666666,
+      "tie_fraction": 0.0,
+      "duplicate_vector_fraction": 0.0,
+      "role": "training-only timing sanity of a discarded two-epoch model; not a study result"
+    }
+  },
+  "si600_feature_extraction_seconds": 0.06122329999925569,
+  "projected_six_run_training_seconds": 239.0553404991806,
+  "twofold_margin_training_seconds": 478.1106809983612,
+  "training_budget_seconds": 7200,
+  "training_projection_passed": true,
+  "cost_limits": "Two real epochs/budget estimate only. Excludes main validation/probes, full SI schedule, checkpoints and interruptions. Baseline/probe cost not yet certified.",
+  "runtime_after_imports_seconds": 12.878595900008804,
+  "test_files_opened": false,
+  "validation_or_test_performance_evaluated": false,
+  "weights_saved": false
+}

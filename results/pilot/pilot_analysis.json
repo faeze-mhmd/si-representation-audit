@@ -1,0 +1,237 @@
+{
+  "analyzed_at_utc": "2026-10-21T08:09:12.275255+00:00",
+  "scope": "validation preview only; no final test results",
+  "n_unique_conditions": 6,
+  "table": [
+    {
+      "run_id": "A_seed11",
+      "setting": "A",
+      "seed": 11,
+      "weight_decay": 0.0,
+      "train_accuracy": 0.9941137998691956,
+      "validation_accuracy": 0.9738562091503268,
+      "validation_macro_f1": 0.9737508008631572,
+      "validation_cross_entropy": 0.07779429107904434,
+      "train_si": 0.9616666666666667,
+      "validation_si": 0.9766666666666667,
+      "training_seconds": 8.019584500041674,
+      "measurement_seconds": 2.950278199990862,
+      "probe_accuracy": {
+        "linear_probe": 0.9686274509803922,
+        "cross_split_1nn_probe": 0.9869281045751634
+      }
+    },
+    {
+      "run_id": "B_seed11",
+      "setting": "B",
+      "seed": 11,
+      "weight_decay": 0.01,
+      "train_accuracy": 0.9934597776324395,
+      "validation_accuracy": 0.9725490196078431,
+      "validation_macro_f1": 0.9724613237617555,
+      "validation_cross_entropy": 0.07720308750867844,
+      "train_si": 0.9616666666666667,
+      "validation_si": 0.975,
+      "training_seconds": 8.348626200095168,
+      "measurement_seconds": 2.684303400092176,
+      "probe_accuracy": {
+        "linear_probe": 0.9686274509803922,
+        "cross_split_1nn_probe": 0.9869281045751634
+      }
+    },
+    {
+      "run_id": "A_seed22",
+      "setting": "A",
+      "seed": 22,
+      "weight_decay": 0.0,
+      "train_accuracy": 0.9941137998691956,
+      "validation_accuracy": 0.9725490196078431,
+      "validation_macro_f1": 0.9724531182466496,
+      "validation_cross_entropy": 0.07667134702205658,
+      "train_si": 0.9716666666666667,
+      "validation_si": 0.9766666666666667,
+      "training_seconds": 7.621441099996446,
+      "measurement_seconds": 2.2640939999982947,
+      "probe_accuracy": {
+        "linear_probe": 0.9751633986928104,
+        "cross_split_1nn_probe": 0.9790849673202614
+      }
+    },
+    {
+      "run_id": "B_seed22",
+      "setting": "B",
+      "seed": 22,
+      "weight_decay": 0.01,
+      "train_accuracy": 0.9941137998691956,
+      "validation_accuracy": 0.9738562091503268,
+      "validation_macro_f1": 0.9736960850050316,
+      "validation_cross_entropy": 0.07773712277412415,
+      "train_si": 0.9733333333333334,
+      "validation_si": 0.975,
+      "training_seconds": 9.903469300057623,
+      "measurement_seconds": 3.2705107999936445,
+      "probe_accuracy": {
+        "linear_probe": 0.9751633986928104,
+        "cross_split_1nn_probe": 0.9816993464052287
+      }
+    },
+    {
+      "run_id": "A_seed33",
+      "setting": "A",
+      "seed": 33,
+      "weight_decay": 0.0,
+      "train_accuracy": 0.9960758665794637,
+      "validation_accuracy": 0.9699346405228758,
+      "validation_macro_f1": 0.9698562760086217,
+      "validation_cross_entropy": 0.07117538899183273,
+      "train_si": 0.9666666666666667,
+      "validation_si": 0.9766666666666667,
+      "training_seconds": 7.4854274000099394,
+      "measurement_seconds": 2.6634598000673577,
+      "probe_accuracy": {
+        "linear_probe": 0.9699346405228758,
+        "cross_split_1nn_probe": 0.9803921568627451
+      }
+    },
+    {
+      "run_id": "B_seed33",
+      "setting": "B",
+      "seed": 33,
+      "weight_decay": 0.01,
+      "train_accuracy": 0.9954218443427076,
+      "validation_accuracy": 0.9699346405228758,
+      "validation_macro_f1": 0.969873940641396,
+      "validation_cross_entropy": 0.07119939476251602,
+      "train_si": 0.9666666666666667,
+      "validation_si": 0.975,
+      "training_seconds": 6.491150999965612,
+      "measurement_seconds": 2.551172499981476,
+      "probe_accuracy": {
+        "linear_probe": 0.9725490196078431,
+        "cross_split_1nn_probe": 0.9777777777777777
+      }
+    }
+  ],
+  "groups": {
+    "A": {
+      "validation_accuracy": {
+        "mean": 0.9721132897603485,
+        "sample_std": 0.001996765008695348
+      },
+      "validation_macro_f1": {
+        "mean": 0.9720200650394761,
+        "sample_std": 0.001983048731330424
+      },
+      "train_si": {
+        "mean": 0.9666666666666667,
+        "sample_std": 0.0050000000000000044
+      },
+      "validation_si": {
+        "mean": 0.9766666666666667,
+        "sample_std": 0.0
+      }
+    },
+    "B": {
+      "validation_accuracy": {
+        "mean": 0.9721132897603485,
+        "sample_std": 0.001996765008695348
+      },
+      "validation_macro_f1": {
+        "mean": 0.9720104498027277,
+        "sample_std": 0.001950554377430917
+      },
+      "train_si": {
+        "mean": 0.9672222222222223,
+        "sample_std": 0.0058531409738071015
+      },
+      "validation_si": {
+        "mean": 0.975,
+        "sample_std": 0.0
+      }
+    }
+  },
+  "paired_differences": [
+    {
+      "seed": 11,
+      "validation_accuracy_B_minus_A": -0.0013071895424836555,
+      "validation_cross_entropy_B_minus_A": -0.0005912035703659058,
+      "train_si_B_minus_A": 0.0,
+      "validation_si_B_minus_A": -0.0016666666666667052
+    },
+    {
+      "seed": 22,
+      "validation_accuracy_B_minus_A": 0.0013071895424836555,
+      "validation_cross_entropy_B_minus_A": 0.001065775752067566,
+      "train_si_B_minus_A": 0.0016666666666667052,
+      "validation_si_B_minus_A": -0.0016666666666667052
+    },
+    {
+      "seed": 33,
+      "validation_accuracy_B_minus_A": 0.0,
+      "validation_cross_entropy_B_minus_A": 2.4005770683288574e-05,
+      "train_si_B_minus_A": 0.0,
+      "validation_si_B_minus_A": -0.0016666666666667052
+    }
+  ],
+  "validation_rank_agreement": {
+    "train_si": {
+      "spearman_rho": 0.06154574548966636,
+      "n_models": 6,
+      "concordant_pairs": 6,
+      "discordant_pairs": 5,
+      "tied_pairs": 4,
+      "interpretation": "descriptive; shared data and paired seeds; no p-value or independence claim; validation SI uses overlapping labelled validation examples"
+    },
+    "validation_si": {
+      "spearman_rho": 0.0,
+      "n_models": 6,
+      "concordant_pairs": 3,
+      "discordant_pairs": 3,
+      "tied_pairs": 9,
+      "interpretation": "descriptive; shared data and paired seeds; no p-value or independence claim; validation SI uses overlapping labelled validation examples"
+    },
+    "negative_validation_loss": {
+      "spearman_rho": -0.956182887467515,
+      "n_models": 6,
+      "concordant_pairs": 0,
+      "discordant_pairs": 12,
+      "tied_pairs": 3,
+      "interpretation": "descriptive; shared data and paired seeds; no p-value or independence claim; validation SI uses overlapping labelled validation examples"
+    }
+  },
+  "within_setting_validation_si_rank_agreement": {
+    "A": {
+      "spearman_rho": null,
+      "n_models": 3,
+      "concordant_pairs": 0,
+      "discordant_pairs": 0,
+      "tied_pairs": 3,
+      "interpretation": "descriptive; shared data and paired seeds; no p-value or independence claim; validation SI uses overlapping labelled validation examples"
+    },
+    "B": {
+      "spearman_rho": null,
+      "n_models": 3,
+      "concordant_pairs": 0,
+      "discordant_pairs": 0,
+      "tied_pairs": 3,
+      "interpretation": "descriptive; shared data and paired seeds; no p-value or independence claim; validation SI uses overlapping labelled validation examples"
+    }
+  },
+  "verification": {
+    "all_source_and_split_hashes_match": true,
+    "all_model_bundles_reloaded": true,
+    "all_final_prediction_metrics_reproduced": true,
+    "all_12_primary_SI_scores_reproduced": true,
+    "paired_initialization_and_minibatch_orders_match": true,
+    "test_evaluated": false
+  },
+  "source_sha256": {
+    "scripts/analyze_pilot.py": "42e364864e35ba86321c43e435ae57607e6ef25f66c82617e76cc74fd2935bfa"
+  },
+  "notes": [
+    "Three seeds and a shared dataset are not independent datasets.",
+    "Validation SI uses 600 labelled examples overlapping the 765-example validation target.",
+    "Per-setting SI ties make within-setting Spearman undefined; do not replace with zero.",
+    "Label shuffling is a fixed-graph sanity control, not a significance test of trained representations."
+  ]
+}

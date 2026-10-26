@@ -1,0 +1,68 @@
+{
+  "executed_at_utc": "2026-10-21T09:35:07.576623+00:00",
+  "stage": "synthetic preflight only",
+  "environment": {
+    "python": "3.11.4",
+    "torch": "2.12.1+cpu",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "device": "cpu",
+    "threads": 1
+  },
+  "parameter_count": 9802,
+  "representation_shapes": {
+    "input": [
+      3,
+      784
+    ],
+    "conv_features": [
+      3,
+      256
+    ],
+    "penultimate": [
+      3,
+      32
+    ],
+    "logits": [
+      3,
+      10
+    ]
+  },
+  "warmup_steps": 2,
+  "measured_steps": 12,
+  "batch_size": 128,
+  "step_seconds": [
+    0.03747750000911765,
+    0.030882300008670427,
+    0.02852040001016576,
+    0.02971449999313336,
+    0.02687609998974949,
+    0.02977670000109356,
+    0.029174800001783296,
+    0.03009290000773035,
+    0.03230200000689365,
+    0.032081999990623444,
+    0.03139930000179447,
+    0.028896500007249415
+  ],
+  "mean_step_seconds": 0.030599583335667074,
+  "planned_steps_per_run": {
+    "A": 720,
+    "B": 2820
+  },
+  "planned_steps_all_six": 10620,
+  "synthetic_projected_optimizer_seconds": 324.9675750247843,
+  "synthetic_projection_with_margin_seconds": 649.9351500495686,
+  "training_budget_seconds": 7200,
+  "synthetic_projection_within_training_cap": true,
+  "limitations": "Synthetic repeated-batch optimizer-only estimate, not real-data timing; excludes loading, evaluation, SI, probes, serialization, imports and interruptions. Real-training-only preflight is required.",
+  "real_data_opened": false,
+  "test_performance_evaluated": false,
+  "weights_saved": false,
+  "source_sha256": {
+    "src/si_audit/cnn.py": "089ca4e2ba4745c7ba602a55b97c66d83cd871944e3713eb08c13af0865e0343",
+    "scripts/smoke_fashion_cnn.py": "562bb01476421220d47c40bffdfa047146b036af266bf1018dda42eb3805be5b",
+    "tests/test_cnn.py": "7e09a0f6e272a8d2180cc15d3a1672263dd9f762da852380c5b68431e883b0b3",
+    "configs/fashion_cnn_v1.json": "049c4ebf18e1cff0e14c90d537a847f03065a2af007d4447c43dc496030dfb1b",
+    "FASHION_CNN_PROTOCOL.md": "747d0ddbd1457e10316ed9c42f3c510468f4289515df30848a4d9e835281791c"
+  }
+}

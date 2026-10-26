@@ -1,0 +1,1374 @@
+{
+  "analyzed_at_utc": "2026-10-21T12:47:37.204928+00:00",
+  "scope": "train/validation preview; no official test access",
+  "source_sha256": "676a1122179b47abf327d3c933485ae258895c87401b85c958ec55ca0558f4ab",
+  "table": [
+    {
+      "run_id": "fashion_A_seed11",
+      "setting": "A",
+      "seed": 11,
+      "training_n": 3000,
+      "train_accuracy": 0.766,
+      "validation": {
+        "accuracy": 0.7496666666666667,
+        "cross_entropy": 0.6137065353393555,
+        "n": 6000,
+        "macro_f1": 0.7379260781031792,
+        "confusion_matrix": [
+          [
+            449,
+            4,
+            10,
+            70,
+            3,
+            1,
+            52,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            561,
+            5,
+            30,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            485,
+            5,
+            49,
+            0,
+            54,
+            0,
+            4,
+            0
+          ],
+          [
+            21,
+            4,
+            7,
+            528,
+            3,
+            0,
+            34,
+            0,
+            3,
+            0
+          ],
+          [
+            2,
+            0,
+            270,
+            62,
+            214,
+            1,
+            45,
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            1,
+            0,
+            540,
+            0,
+            41,
+            8,
+            8
+          ],
+          [
+            112,
+            1,
+            306,
+            39,
+            18,
+            1,
+            112,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            38,
+            0,
+            525,
+            2,
+            35
+          ],
+          [
+            4,
+            1,
+            6,
+            2,
+            1,
+            2,
+            16,
+            4,
+            564,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            1,
+            19,
+            1,
+            55,
+            2,
+            520
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "precision": 0.7597292724196277,
+            "recall": 0.7483333333333333,
+            "f1": 0.7539882451721243,
+            "support": 600
+          },
+          "1": {
+            "precision": 0.9756521739130435,
+            "recall": 0.935,
+            "f1": 0.9548936170212766,
+            "support": 600
+          },
+          "2": {
+            "precision": 0.44536271808999084,
+            "recall": 0.8083333333333333,
+            "f1": 0.5743043220840734,
+            "support": 600
+          },
+          "3": {
+            "precision": 0.7164179104477612,
+            "recall": 0.88,
+            "f1": 0.7898279730740464,
+            "support": 600
+          },
+          "4": {
+            "precision": 0.7353951890034365,
+            "recall": 0.3566666666666667,
+            "f1": 0.48035914702581367,
+            "support": 600
+          },
+          "5": {
+            "precision": 0.8970099667774086,
+            "recall": 0.9,
+            "f1": 0.8985024958402662,
+            "support": 600
+          },
+          "6": {
+            "precision": 0.35443037974683544,
+            "recall": 0.18666666666666668,
+            "f1": 0.2445414847161572,
+            "support": 600
+          },
+          "7": {
+            "precision": 0.84,
+            "recall": 0.875,
+            "f1": 0.8571428571428571,
+            "support": 600
+          },
+          "8": {
+            "precision": 0.9230769230769231,
+            "recall": 0.94,
+            "f1": 0.9314616019818331,
+            "support": 600
+          },
+          "9": {
+            "precision": 0.9236234458259325,
+            "recall": 0.8666666666666667,
+            "f1": 0.8942390369733448,
+            "support": 600
+          }
+        }
+      },
+      "train_si600": 0.7083333333333334,
+      "validation_si600": 0.7166666666666667,
+      "validation_si2000": 0.7365,
+      "probes": {
+        "linear_probe": {
+          "accuracy": 0.808,
+          "macro_f1": 0.8052330267020127,
+          "warnings": [
+            "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+          ]
+        },
+        "cross_split_1nn_probe": {
+          "accuracy": 0.7425,
+          "macro_f1": 0.7434977662001125,
+          "warnings": []
+        }
+      },
+      "training_seconds": 29.308660800015787,
+      "measurement_seconds": 80.37830269997357,
+      "checkpoint_seconds": 0.31839019995823037
+    },
+    {
+      "run_id": "fashion_B_seed11",
+      "setting": "B",
+      "seed": 11,
+      "training_n": 12000,
+      "train_accuracy": 0.84525,
+      "validation": {
+        "accuracy": 0.8361666666666666,
+        "cross_entropy": 0.4420357615152995,
+        "n": 6000,
+        "macro_f1": 0.8324423376376838,
+        "confusion_matrix": [
+          [
+            491,
+            0,
+            8,
+            53,
+            2,
+            2,
+            31,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            579,
+            0,
+            17,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            1,
+            348,
+            6,
+            142,
+            0,
+            90,
+            0,
+            6,
+            0
+          ],
+          [
+            13,
+            4,
+            0,
+            554,
+            11,
+            0,
+            16,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            22,
+            32,
+            490,
+            0,
+            50,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            548,
+            0,
+            36,
+            4,
+            10
+          ],
+          [
+            111,
+            0,
+            49,
+            33,
+            108,
+            1,
+            288,
+            0,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            9,
+            0,
+            571,
+            1,
+            19
+          ],
+          [
+            2,
+            0,
+            1,
+            2,
+            3,
+            2,
+            8,
+            1,
+            580,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            29,
+            0,
+            568
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "precision": 0.7843450479233227,
+            "recall": 0.8183333333333334,
+            "f1": 0.800978792822186,
+            "support": 600
+          },
+          "1": {
+            "precision": 0.9897435897435898,
+            "recall": 0.965,
+            "f1": 0.9772151898734177,
+            "support": 600
+          },
+          "2": {
+            "precision": 0.8130841121495327,
+            "recall": 0.58,
+            "f1": 0.6770428015564203,
+            "support": 600
+          },
+          "3": {
+            "precision": 0.7936962750716332,
+            "recall": 0.9233333333333333,
+            "f1": 0.8536209553158706,
+            "support": 600
+          },
+          "4": {
+            "precision": 0.6464379947229552,
+            "recall": 0.8166666666666667,
+            "f1": 0.7216494845360825,
+            "support": 600
+          },
+          "5": {
+            "precision": 0.9699115044247788,
+            "recall": 0.9133333333333333,
+            "f1": 0.9407725321888412,
+            "support": 600
+          },
+          "6": {
+            "precision": 0.5938144329896907,
+            "recall": 0.48,
+            "f1": 0.5308755760368664,
+            "support": 600
+          },
+          "7": {
+            "precision": 0.8963893249607535,
+            "recall": 0.9516666666666667,
+            "f1": 0.9232012934518997,
+            "support": 600
+          },
+          "8": {
+            "precision": 0.9354838709677419,
+            "recall": 0.9666666666666667,
+            "f1": 0.9508196721311475,
+            "support": 600
+          },
+          "9": {
+            "precision": 0.9498327759197325,
+            "recall": 0.9466666666666667,
+            "f1": 0.9482470784641068,
+            "support": 600
+          }
+        }
+      },
+      "train_si600": 0.7783333333333333,
+      "validation_si600": 0.79,
+      "validation_si2000": 0.7815,
+      "probes": {
+        "linear_probe": {
+          "accuracy": 0.8505,
+          "macro_f1": 0.8494165204962721,
+          "warnings": [
+            "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+          ]
+        },
+        "cross_split_1nn_probe": {
+          "accuracy": 0.8128333333333333,
+          "macro_f1": 0.8132052228662451,
+          "warnings": []
+        }
+      },
+      "training_seconds": 120.24138190003578,
+      "measurement_seconds": 148.91319929994643,
+      "checkpoint_seconds": 0.2986051999760093
+    },
+    {
+      "run_id": "fashion_A_seed22",
+      "setting": "A",
+      "seed": 22,
+      "training_n": 3000,
+      "train_accuracy": 0.7653333333333333,
+      "validation": {
+        "accuracy": 0.7548333333333334,
+        "cross_entropy": 0.6285979487101236,
+        "n": 6000,
+        "macro_f1": 0.7427970297144202,
+        "confusion_matrix": [
+          [
+            466,
+            5,
+            8,
+            76,
+            1,
+            2,
+            31,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            562,
+            4,
+            30,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            452,
+            8,
+            41,
+            0,
+            87,
+            0,
+            6,
+            0
+          ],
+          [
+            27,
+            8,
+            4,
+            542,
+            3,
+            0,
+            14,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            6,
+            207,
+            95,
+            176,
+            0,
+            109,
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            1,
+            0,
+            506,
+            1,
+            63,
+            7,
+            20
+          ],
+          [
+            131,
+            1,
+            207,
+            51,
+            15,
+            0,
+            182,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            28,
+            0,
+            522,
+            2,
+            48
+          ],
+          [
+            7,
+            1,
+            2,
+            1,
+            2,
+            0,
+            16,
+            5,
+            565,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            3,
+            1,
+            37,
+            1,
+            556
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "precision": 0.7304075235109718,
+            "recall": 0.7766666666666666,
+            "f1": 0.752827140549273,
+            "support": 600
+          },
+          "1": {
+            "precision": 0.9590443686006825,
+            "recall": 0.9366666666666666,
+            "f1": 0.9477234401349073,
+            "support": 600
+          },
+          "2": {
+            "precision": 0.5113122171945701,
+            "recall": 0.7533333333333333,
+            "f1": 0.6091644204851752,
+            "support": 600
+          },
+          "3": {
+            "precision": 0.6732919254658385,
+            "recall": 0.9033333333333333,
+            "f1": 0.7715302491103203,
+            "support": 600
+          },
+          "4": {
+            "precision": 0.7333333333333333,
+            "recall": 0.29333333333333333,
+            "f1": 0.41904761904761906,
+            "support": 600
+          },
+          "5": {
+            "precision": 0.9387755102040817,
+            "recall": 0.8433333333333334,
+            "f1": 0.8884986830553117,
+            "support": 600
+          },
+          "6": {
+            "precision": 0.4108352144469526,
+            "recall": 0.30333333333333334,
+            "f1": 0.348993288590604,
+            "support": 600
+          },
+          "7": {
+            "precision": 0.8325358851674641,
+            "recall": 0.87,
+            "f1": 0.8508557457212714,
+            "support": 600
+          },
+          "8": {
+            "precision": 0.9216965742251223,
+            "recall": 0.9416666666666667,
+            "f1": 0.9315746084089035,
+            "support": 600
+          },
+          "9": {
+            "precision": 0.8896,
+            "recall": 0.9266666666666666,
+            "f1": 0.9077551020408163,
+            "support": 600
+          }
+        }
+      },
+      "train_si600": 0.7183333333333334,
+      "validation_si600": 0.71,
+      "validation_si2000": 0.7265,
+      "probes": {
+        "linear_probe": {
+          "accuracy": 0.8058333333333333,
+          "macro_f1": 0.8027182660030423,
+          "warnings": [
+            "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+          ]
+        },
+        "cross_split_1nn_probe": {
+          "accuracy": 0.7363333333333333,
+          "macro_f1": 0.7372449070219822,
+          "warnings": []
+        }
+      },
+      "training_seconds": 28.318359099983354,
+      "measurement_seconds": 71.20098339999095,
+      "checkpoint_seconds": 0.31290239993541036
+    },
+    {
+      "run_id": "fashion_B_seed22",
+      "setting": "B",
+      "seed": 22,
+      "training_n": 12000,
+      "train_accuracy": 0.83525,
+      "validation": {
+        "accuracy": 0.8286666666666667,
+        "cross_entropy": 0.462241995493571,
+        "n": 6000,
+        "macro_f1": 0.8244323104577479,
+        "confusion_matrix": [
+          [
+            497,
+            1,
+            9,
+            36,
+            3,
+            2,
+            38,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            577,
+            0,
+            18,
+            2,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            459,
+            6,
+            72,
+            0,
+            48,
+            0,
+            10,
+            0
+          ],
+          [
+            13,
+            4,
+            5,
+            547,
+            9,
+            0,
+            20,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            75,
+            39,
+            391,
+            0,
+            86,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            556,
+            0,
+            32,
+            3,
+            7
+          ],
+          [
+            122,
+            1,
+            117,
+            23,
+            67,
+            0,
+            256,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0,
+            577,
+            1,
+            6
+          ],
+          [
+            3,
+            1,
+            2,
+            1,
+            0,
+            2,
+            8,
+            4,
+            579,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            10,
+            1,
+            55,
+            0,
+            533
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "precision": 0.7741433021806854,
+            "recall": 0.8283333333333334,
+            "f1": 0.8003220611916264,
+            "support": 600
+          },
+          "1": {
+            "precision": 0.9796264855687606,
+            "recall": 0.9616666666666667,
+            "f1": 0.9705634987384356,
+            "support": 600
+          },
+          "2": {
+            "precision": 0.6881559220389805,
+            "recall": 0.765,
+            "f1": 0.7245461720599842,
+            "support": 600
+          },
+          "3": {
+            "precision": 0.8164179104477612,
+            "recall": 0.9116666666666666,
+            "f1": 0.8614173228346457,
+            "support": 600
+          },
+          "4": {
+            "precision": 0.71875,
+            "recall": 0.6516666666666666,
+            "f1": 0.6835664335664335,
+            "support": 600
+          },
+          "5": {
+            "precision": 0.9488054607508533,
+            "recall": 0.9266666666666666,
+            "f1": 0.9376053962900506,
+            "support": 600
+          },
+          "6": {
+            "precision": 0.5565217391304348,
+            "recall": 0.4266666666666667,
+            "f1": 0.4830188679245283,
+            "support": 600
+          },
+          "7": {
+            "precision": 0.8637724550898204,
+            "recall": 0.9616666666666667,
+            "f1": 0.9100946372239748,
+            "support": 600
+          },
+          "8": {
+            "precision": 0.9219745222929936,
+            "recall": 0.965,
+            "f1": 0.9429967426710097,
+            "support": 600
+          },
+          "9": {
+            "precision": 0.9761904761904762,
+            "recall": 0.8883333333333333,
+            "f1": 0.9301919720767888,
+            "support": 600
+          }
+        }
+      },
+      "train_si600": 0.7483333333333333,
+      "validation_si600": 0.74,
+      "validation_si2000": 0.768,
+      "probes": {
+        "linear_probe": {
+          "accuracy": 0.8415,
+          "macro_f1": 0.8398245672513868,
+          "warnings": [
+            "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+          ]
+        },
+        "cross_split_1nn_probe": {
+          "accuracy": 0.8011666666666667,
+          "macro_f1": 0.8022001076989709,
+          "warnings": []
+        }
+      },
+      "training_seconds": 111.00518729999021,
+      "measurement_seconds": 136.86440729998867,
+      "checkpoint_seconds": 0.27399450006487314
+    },
+    {
+      "run_id": "fashion_A_seed33",
+      "setting": "A",
+      "seed": 33,
+      "training_n": 3000,
+      "train_accuracy": 0.7616666666666667,
+      "validation": {
+        "accuracy": 0.7588333333333334,
+        "cross_entropy": 0.654869021097819,
+        "n": 6000,
+        "macro_f1": 0.7486314087677312,
+        "confusion_matrix": [
+          [
+            422,
+            7,
+            5,
+            98,
+            6,
+            2,
+            49,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            558,
+            3,
+            30,
+            8,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            285,
+            9,
+            213,
+            0,
+            82,
+            0,
+            7,
+            0
+          ],
+          [
+            8,
+            13,
+            1,
+            549,
+            12,
+            0,
+            16,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            6,
+            30,
+            68,
+            471,
+            2,
+            15,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            1,
+            2,
+            494,
+            0,
+            77,
+            6,
+            18
+          ],
+          [
+            100,
+            1,
+            68,
+            56,
+            217,
+            2,
+            138,
+            0,
+            18,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            26,
+            0,
+            529,
+            2,
+            43
+          ],
+          [
+            2,
+            1,
+            1,
+            9,
+            8,
+            0,
+            10,
+            6,
+            563,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            4,
+            1,
+            47,
+            1,
+            544
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "precision": 0.7858472998137802,
+            "recall": 0.7033333333333334,
+            "f1": 0.7423043095866315,
+            "support": 600
+          },
+          "1": {
+            "precision": 0.9473684210526315,
+            "recall": 0.93,
+            "f1": 0.9386038687973086,
+            "support": 600
+          },
+          "2": {
+            "precision": 0.7251908396946565,
+            "recall": 0.475,
+            "f1": 0.5740181268882175,
+            "support": 600
+          },
+          "3": {
+            "precision": 0.6686967113276492,
+            "recall": 0.915,
+            "f1": 0.772695285010556,
+            "support": 600
+          },
+          "4": {
+            "precision": 0.502132196162047,
+            "recall": 0.785,
+            "f1": 0.6124837451235371,
+            "support": 600
+          },
+          "5": {
+            "precision": 0.9320754716981132,
+            "recall": 0.8233333333333334,
+            "f1": 0.8743362831858407,
+            "support": 600
+          },
+          "6": {
+            "precision": 0.4423076923076923,
+            "recall": 0.23,
+            "f1": 0.3026315789473684,
+            "support": 600
+          },
+          "7": {
+            "precision": 0.802731411229135,
+            "recall": 0.8816666666666667,
+            "f1": 0.840349483717236,
+            "support": 600
+          },
+          "8": {
+            "precision": 0.913961038961039,
+            "recall": 0.9383333333333334,
+            "f1": 0.9259868421052632,
+            "support": 600
+          },
+          "9": {
+            "precision": 0.8991735537190083,
+            "recall": 0.9066666666666666,
+            "f1": 0.9029045643153527,
+            "support": 600
+          }
+        }
+      },
+      "train_si600": 0.71,
+      "validation_si600": 0.705,
+      "validation_si2000": 0.722,
+      "probes": {
+        "linear_probe": {
+          "accuracy": 0.7905,
+          "macro_f1": 0.7864174180746089,
+          "warnings": [
+            "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+          ]
+        },
+        "cross_split_1nn_probe": {
+          "accuracy": 0.7296666666666667,
+          "macro_f1": 0.7306192748338346,
+          "warnings": []
+        }
+      },
+      "training_seconds": 28.90875150001375,
+      "measurement_seconds": 69.9249294999463,
+      "checkpoint_seconds": 0.29553730005864054
+    },
+    {
+      "run_id": "fashion_B_seed33",
+      "setting": "B",
+      "seed": 33,
+      "training_n": 12000,
+      "train_accuracy": 0.8309166666666666,
+      "validation": {
+        "accuracy": 0.8296666666666667,
+        "cross_entropy": 0.4693038953145345,
+        "n": 6000,
+        "macro_f1": 0.8243813913429721,
+        "confusion_matrix": [
+          [
+            493,
+            0,
+            8,
+            53,
+            2,
+            2,
+            31,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            572,
+            0,
+            22,
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            445,
+            11,
+            84,
+            0,
+            45,
+            0,
+            9,
+            0
+          ],
+          [
+            14,
+            4,
+            6,
+            554,
+            7,
+            0,
+            13,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            66,
+            34,
+            431,
+            0,
+            59,
+            0,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            544,
+            1,
+            40,
+            3,
+            10
+          ],
+          [
+            127,
+            0,
+            123,
+            25,
+            78,
+            1,
+            236,
+            0,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            570,
+            2,
+            18
+          ],
+          [
+            2,
+            1,
+            5,
+            1,
+            4,
+            0,
+            7,
+            5,
+            575,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            40,
+            0,
+            558
+          ]
+        ],
+        "per_class": {
+          "0": {
+            "precision": 0.765527950310559,
+            "recall": 0.8216666666666667,
+            "f1": 0.792604501607717,
+            "support": 600
+          },
+          "1": {
+            "precision": 0.9862068965517241,
+            "recall": 0.9533333333333334,
+            "f1": 0.9694915254237289,
+            "support": 600
+          },
+          "2": {
+            "precision": 0.6814701378254211,
+            "recall": 0.7416666666666667,
+            "f1": 0.7102952913008779,
+            "support": 600
+          },
+          "3": {
+            "precision": 0.7891737891737892,
+            "recall": 0.9233333333333333,
+            "f1": 0.8509984639016898,
+            "support": 600
+          },
+          "4": {
+            "precision": 0.7077175697865353,
+            "recall": 0.7183333333333334,
+            "f1": 0.7129859387923904,
+            "support": 600
+          },
+          "5": {
+            "precision": 0.974910394265233,
+            "recall": 0.9066666666666666,
+            "f1": 0.9395509499136442,
+            "support": 600
+          },
+          "6": {
+            "precision": 0.5974683544303797,
+            "recall": 0.3933333333333333,
+            "f1": 0.4743718592964824,
+            "support": 600
+          },
+          "7": {
+            "precision": 0.8702290076335878,
+            "recall": 0.95,
+            "f1": 0.9083665338645418,
+            "support": 600
+          },
+          "8": {
+            "precision": 0.93042071197411,
+            "recall": 0.9583333333333334,
+            "f1": 0.9441707717569786,
+            "support": 600
+          },
+          "9": {
+            "precision": 0.9522184300341296,
+            "recall": 0.93,
+            "f1": 0.9409780775716695,
+            "support": 600
+          }
+        }
+      },
+      "train_si600": 0.7366666666666667,
+      "validation_si600": 0.7416666666666667,
+      "validation_si2000": 0.772,
+      "probes": {
+        "linear_probe": {
+          "accuracy": 0.841,
+          "macro_f1": 0.8392586090328352,
+          "warnings": [
+            "lbfgs failed to converge after 1000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=1000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression"
+          ]
+        },
+        "cross_split_1nn_probe": {
+          "accuracy": 0.7955,
+          "macro_f1": 0.7965205464905509,
+          "warnings": []
+        }
+      },
+      "training_seconds": 127.6767410000466,
+      "measurement_seconds": 157.6654950999946,
+      "checkpoint_seconds": 0.3137525999773061
+    }
+  ],
+  "groups": {
+    "A": {
+      "accuracy": {
+        "n": 3,
+        "mean": 0.7544444444444446,
+        "sample_sd": 0.004595690412807451
+      },
+      "macro_f1": {
+        "n": 3,
+        "mean": 0.7431181721951102,
+        "sample_sd": 0.005359885775744363
+      }
+    },
+    "B": {
+      "accuracy": {
+        "n": 3,
+        "mean": 0.8315,
+        "sample_sd": 0.004072263907623511
+      },
+      "macro_f1": {
+        "n": 3,
+        "mean": 0.827085346479468,
+        "sample_sd": 0.004639360288980031
+      }
+    }
+  },
+  "paired_B_minus_A": [
+    {
+      "seed": 11,
+      "validation_accuracy_B_minus_A": 0.08649999999999991,
+      "validation_si600_B_minus_A": 0.07333333333333336
+    },
+    {
+      "seed": 22,
+      "validation_accuracy_B_minus_A": 0.0738333333333333,
+      "validation_si600_B_minus_A": 0.030000000000000027
+    },
+    {
+      "seed": 33,
+      "validation_accuracy_B_minus_A": 0.0708333333333333,
+      "validation_si600_B_minus_A": 0.036666666666666736
+    }
+  ],
+  "training_seconds": 445.4590816000855,
+  "measurement_seconds": 664.9473172998405,
+  "checkpoint_seconds": 1.8131821999704698,
+  "training_runner_wall_seconds": 1114.2347900000022,
+  "baseline_seconds": 27.60993320000125,
+  "probes_with_warnings": 6,
+  "validation_predictions_sha256": "1c3f2e1f20de9856eb4880a89f9e99fba09f7d99941fdbd35d772dea8140647e",
+  "verification": {
+    "source_freeze_and_manifest_checked": true,
+    "models_reloaded": 6,
+    "primary_SI600_reproduced": 12,
+    "SI2000_reproduced": 6,
+    "all_final_layer_SI_and_controls_reproduced": true,
+    "head_metrics_reproduced": 12,
+    "probe_metrics_reproduced": 12,
+    "baseline_metrics_verified": 6,
+    "validation_readouts_saved": 24,
+    "initialization_pairs_verified": 3,
+    "epoch_histories_verified": 6,
+    "test_evaluated": false
+  },
+  "verification_runtime_after_imports_seconds": 100.56714720001037
+}

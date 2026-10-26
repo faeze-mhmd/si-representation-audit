@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "verified_at_utc": "2026-10-21T13:50:09.529074+00:00",
+  "readouts_verified": 24,
+  "test_rows_verified": 10000,
+  "rank_comparisons_verified": 18,
+  "gallery_examples_verified": 12,
+  "new_fit_or_neural_inference": false,
+  "cross_entropy_reconstructed_from_classes": false,
+  "analysis_source_sha256": "52388aafb155f8b9d6a530f498e90aaf60a4bfda27e9b812e87d041e9df61abc",
+  "results_sha256": "190bd6dac0391fd9c18ecbec796b0a519acd2f54f76b07e678db423eed3a581d",
+  "predictions_sha256": "982e1fa428f0e44c781c589dfe558db3a677fb241a8a45ed8e9e7411b907b5b9"
+}

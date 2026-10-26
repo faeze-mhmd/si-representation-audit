@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_hashes_verified": true,
+  "manifest_sha256": "7e8591baa4d311e61f8dbe32e69c3b5dbb1e24ba14b7e6384e3eea8d373cc6cd",
+  "nested_budget_ids_verified": true,
+  "si_subset_balance_verified": true,
+  "tiny_batch_gate_and_training_cost_verified": true,
+  "audit_packaging": "exact original CRLF reconstructed from delivered LF",
+  "no_model_fitting_or_inference": true,
+  "test_files_opened": false,
+  "source_sha256": "85718f9a236cd3910299a65d36794aa2fe46cb4fbb64425f60f23d14acf7c8f0"
+}
