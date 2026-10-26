@@ -1,0 +1,22 @@
+{
+  "protocol": "EXPERIMENT_PROTOCOL.md v0.2",
+  "architecture": [64, 64, 32, 10],
+  "epochs": 50,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "settings": {"A": 0.0, "B": 0.01},
+  "seeds": [11, 22, 33],
+  "checkpoint_epochs": [0, 5, 20, 50],
+  "primary_layer": "penultimate",
+  "primary_epoch": 50,
+  "threads": 1,
+  "training_budget_seconds": 7200,
+  "permutation_count": 100,
+  "permutation_seeds": {"train": 2030, "validation": 2031},
+  "probe_logistic_C": 1.0,
+  "probe_logistic_max_iter": 1000,
+  "error_gallery_run": "A_seed11",
+  "error_gallery_count": 12,
+  "analysis_stage": "train/validation preview; official test predictions prohibited",
+  "permutation_interpretation": "fixed-representation sanity control, not a significance test of a label-trained network"
+}
