@@ -1,0 +1,1 @@
+An empirical audit of Separation Index on Optdigits and Fashion-MNIST, with baselines, paired runs and negative results.
